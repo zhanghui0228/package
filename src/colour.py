@@ -22,6 +22,9 @@ class Colour(object):
         elif self.__color__ == 'red':
             red = "\033[31m {} \033[0m".format(self.__status__)
             return red
+        else:
+            other = "{}".format(self.__status__)
+            return other
 
 
 
@@ -32,4 +35,3 @@ def colour(color, status):
 
 #if __name__ == '__main__':
 #    print (colour('green', 'done'))
-
